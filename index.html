@@ -1,28 +1,45 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="jscolor.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
 <body>
-  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-  <script src="main.js"></script>
-  <script src="jscolor.js"></script>
 
+  <a href="" download id="imgdownloader">
+    <img src="" id="imgselector">
+  </a>
+<div class="fullspans">
+    <input id="text" placeholder="What do you want to say?">
+</div>
 
-<img src="" id="imgselector">
-<br>
-<input id="text" placeholder="What do you want to say?" style="font-size: 20px;width: 20%;position: absolute;">
-<br>
-<br>
-Background Color: <input class="jscolor" onchange="backgroundColor = this.jscolor; printText($('#text').val());" value="000000">
-Text Color: <input class="jscolor" onchange="textColor = this.jscolor; printText($('#text').val());" value="ffffff">
-<br>
-<input id="fontID" placeholder="FontID?" style="font-size: 10px;width: 20%;position: absolute;">
-<br>
-<h1>Some fonts</h1>
-<ul>
-<li><b>Futura Round SH-Regular - </b>3b313f1a50677b3ab676b9384f253b4e</li>
-<li><b>Neue Helvetica Pro 35 Thin - </b>1f0ededb8b0f17babb11984322e493a6</li>
-<li><b>Neue Helvetica Pro 75 Bold Outline - </b>abee07e3ffec0222303d21d2eb406765</li>
-<li><b>Comic Sans - </b>01f8768e071049be489c6307d1a4bfff</li>
-</ul>
+    <div id="settings">
+        <div class="setting"> Background Color: <input class="jscolor" onchange="backgroundColor = this.jscolor; printText($('#text').val());" value="000000"></div>
+        <div class="setting"> Text Color: <input class="jscolor" onchange="textColor = this.jscolor; printText($('#text').val());" value="ffffff"></div>
+        <input id="fontID" placeholder="FontID?">
+        <br>
+        <input id="idGen" placeholder="Enter the url for a font preview">
+    </div>
+    <div id="instructions">
+        <h2>Instructions</h2>
+        <p>
+            Do the thing
+        </p>
+    </div>
 
+    <div id="font List">
+        <h2>Some fonts</h2>
+        <ul>
+            <li><b>Futura Round SH-Regular - </b>3b313f1a50677b3ab676b9384f253b4e</li>
+            <li><b>Neue Helvetica Pro 35 Thin - </b>1f0ededb8b0f17babb11984322e493a6</li>
+            <li><b>Neue Helvetica Pro 75 Bold Outline - </b>abee07e3ffec0222303d21d2eb406765</li>
+            <li><b>Comic Sans - </b>01f8768e071049be489c6307d1a4bfff</li>
+        </ul>
+    </div>
 </body>
+
 </html>

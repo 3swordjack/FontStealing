@@ -1,0 +1,42 @@
+body{
+width: 90%;
+font-family: sans-serif;
+text-align: center;
+}
+
+#imgselector{
+  padding: 10px;
+  margin-left:5%;
+  margin-right: 5%;
+}
+
+.fullspans{
+width: 100%;
+margin-top: 30px;
+margin-bottom: 30px;
+padding:10px;
+
+}
+
+#text{
+width: 60%;
+margin-left: 20%;
+margin-right: 20%;
+font-size: 30px;
+}
+
+#settings{
+  margin-top: 10px;
+
+}
+.setting{
+  margin:5px;
+}
+#fontID{
+  width: 20%;
+}
+
+#idGen{
+  margin-top: 10px;
+  width: 20%;
+}
