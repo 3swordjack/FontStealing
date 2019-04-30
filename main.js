@@ -31,6 +31,7 @@ function printText(textIn) {
     }
     var imgsrc = "https://render.myfonts.net/fonts/font_rend.php?id=" + fontID + "&rt=" + textIn + "&rs=32&w=720&sc=2&nie=true&fg=" + textColor + "&bg=" + backgroundColor;
     $('#imgselector').attr('src', imgsrc);
+    $('#imgdownloader').attr('href', imgsrc);
     console.log(imgsrc);
 }
 
